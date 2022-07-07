@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:padding="8dp">
+
+        <SurfaceView
+            android:id="@+id/safaceView"
+            android:layout_width="match_parent"
+            android:layout_height="900dp" />
+
+        <TextView
+            android:id="@+id/scoretv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+
+            android:background="#FF9800"
+            android:text="0"
+            android:textColor="#3C0316"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:background="#013503"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/top_arrow"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:background="@color/purple_200"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/left_arrow"
+                android:layout_width="124dp"
+                android:layout_height="50dp"
+                android:background="@color/purple_200"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/right_arrow"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:background="@color/purple_200"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttom_arrow"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:background="@color/purple_200"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
